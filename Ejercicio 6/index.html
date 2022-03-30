@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=Ejercicio-6, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="get" onsubmit="return Comprobar();">
+        <fieldset>
+        <legend>Datos</legend>
+            Nombre y apellido (máximo 20 caracteres) <input type="text"  placeholder="Ingrese su nombre" maxlength="20" id="nombre" name="nombre" onkeypress="Nombre()"> <br> 
+            
+            Correo <input type="email" placeholder="Email" id="email" name="email"> <br> 
+            
+            
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend>Direccion</legend>
+            Direccion: <input type="text" placeholder="Nombre de la Calle" id="Calle" name="Calle">
+            <br>
+            <br>
+            Numero de telefono <input type="tel" placeholder="Numero de telefono" id="Tel" name="Tel"  maxlength="10" onkeypress="return soloNumeros(event);">
+            <br>
+            <br>
+            Sugerencias:
+            <br>
+            <textarea name="Sugerencias" id="Sugerencias" cols="100" rows="10"></textarea>
+        </fieldset>
+        <input type="submit" class="button" name="enviar" value="Enviar">
+    <script src="index.js"></script>
+
+</body>
+</html>
